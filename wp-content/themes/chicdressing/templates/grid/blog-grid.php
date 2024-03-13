@@ -8,10 +8,12 @@
 		get_template_part( 'templates/grid/category', 'description' );
 	}
 
+	// On ajoute un titre à la section blog
+	echo '<h2 id="leblog" class="chic-title">Dernières publications </h2>'; // modif: h1 par h2
+	
+	// modif: Les listes <ul> doivent  contenir que des éléments <li>
 	// Blog Grid
 	echo '<ul class="blog-grid">';
-	// On ajoute un titre à la section blog
-	echo '<h1 id="leblog" class="chic-title">Dernières publications </h1>';
 
 	if ( have_posts() ) :
 
@@ -31,8 +33,8 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class($post_class); ?>>
 
 				<div class="post-media">
-					<a href="<?php echo esc_url( get_permalink() ); ?>"></a>
-					<?php the_post_thumbnail('full'); ?>
+					<a href="<?php echo esc_url( get_permalink() ); ?>" aria-label="<?php esc_html_e( 'read more','ashe' ); ?>"></a><!-- modif: ajouter un nom au lien qui n'a pas de nom visible -->
+					<?php the_post_thumbnail('large'); //modif: reduire la taille de l'image affichée de full en medium ?>
 				</div>
 
 				<header class="post-header">
