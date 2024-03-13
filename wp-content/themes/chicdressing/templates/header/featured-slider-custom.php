@@ -5,14 +5,14 @@ $slider_pagination 	= ashe_options( 'featured_slider_pagination' );
 
 $slider_data = '{';
 
-	$slider_data .= '"slidesToShow":1, "fade":true';
+	$slider_data .= '"slidesToShow":1, "fade":false';
 
 	if ( !$slider_navigation ) {
 		$slider_data .= ', "arrows":false';
 	} 
 
 	if ( $slider_pagination ) {
-		$slider_data .= ', "dots":true';
+		$slider_data .= ', "dots":false';
 	}
 	
 
@@ -65,7 +65,7 @@ $slider_data .= '}';
 
 	<div class="slider-item">
 
-		<div class="slider-item-bg" style="background-image:url( <?php echo wp_get_attachment_image_src( $repeater_item->image_url, 'full' )[0]; ?>);"></div>
+		<div class="slider-item-bg" style="background-image:url( <?php echo wp_get_attachment_image_src( $repeater_item->image_url, 'medium' )[0]; //modif: full par medium ?>);"></div>
 
 		<div class="cv-container image-overlay">
 			<div class="cv-outer">
@@ -77,7 +77,7 @@ $slider_data .= '}';
 						$target = '1' === $repeater_item->checkbox ? '_blank' : '_self';
 
 						if ( $repeater_item->btn_text === '' && $repeater_item->link !== '' ) {
-							echo '<a class="slider-image-link" href="'. esc_url( $repeater_item->link ) .'" target="'. $target .'"></a>';
+							echo '<a class="slider-image-link" href="'. esc_url( $repeater_item->link ) .'" target="'. $target .'" aria-label="lien du slider"></a>';// modif: ajout du titre du lien si nom invisible
 						}
 
 						?>
