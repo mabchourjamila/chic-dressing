@@ -1,51 +1,21 @@
 <?php return array(
     'root' => array(
         'name' => 'facebookincubator/facebook-for-woocommerce',
-        'pretty_version' => 'dev-release/2.6.24',
-        'version' => 'dev-release/2.6.24',
-        'reference' => '36471d38a2f3ab8e533c52fcc6143d008dad1f37',
+        'pretty_version' => 'dev-release/3.1.11',
+        'version' => 'dev-release/3.1.11',
+        'reference' => '39ee6d306207c5b3fe4301031fe40f0a65513e03',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => false,
     ),
     'versions' => array(
-        'composer/installers' => array(
-            'pretty_version' => 'v1.12.0',
-            'version' => '1.12.0.0',
-            'reference' => 'd20a64ed3c94748397ff5973488761b22f6d3f19',
-            'type' => 'composer-plugin',
-            'install_path' => __DIR__ . '/./installers',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'facebookincubator/facebook-for-woocommerce' => array(
-            'pretty_version' => 'dev-release/2.6.24',
-            'version' => 'dev-release/2.6.24',
-            'reference' => '36471d38a2f3ab8e533c52fcc6143d008dad1f37',
+            'pretty_version' => 'dev-release/3.1.11',
+            'version' => 'dev-release/3.1.11',
+            'reference' => '39ee6d306207c5b3fe4301031fe40f0a65513e03',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-        'roundcube/plugin-installer' => array(
-            'dev_requirement' => false,
-            'replaced' => array(
-                0 => '*',
-            ),
-        ),
-        'shama/baton' => array(
-            'dev_requirement' => false,
-            'replaced' => array(
-                0 => '*',
-            ),
-        ),
-        'skyverge/wc-plugin-framework' => array(
-            'pretty_version' => '5.10.0',
-            'version' => '5.10.0.0',
-            'reference' => 'e230d7c40286854e49c0cafeec3398cbf2427a64',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../skyverge/wc-plugin-framework',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
