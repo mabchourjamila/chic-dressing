@@ -16,3 +16,18 @@ Stack trace:
 #13 {main}
   thrown dans /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php à la ligne 161
 
+2024-03-13T19:31:20+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "wp_print_media_templates" not found or invalid function name in /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-includes/script-loader.php(2245): do_action('wp_print_footer...')
+#3 /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-includes/block-editor.php(377): wp_print_footer_scripts()
+#4 /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-includes/block-editor.php(623): _wp_get_iframed_editor_assets()
+#5 /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-includes/class-wp-customize-widgets.php(849): get_block_editor_settings(Array, Object(WP_Block_Editor_Context))
+#6 /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(324): WP_Customize_Widgets->enqueue_scripts('')
+#7 /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-admin/customize.php(123): do_action('customize_contr...')
+#10 {main}
+  thrown dans /home/yboumehdi/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php à la ligne 324
+
