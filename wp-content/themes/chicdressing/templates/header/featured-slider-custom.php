@@ -65,7 +65,7 @@ $slider_data .= '}';
 
 	<div class="slider-item">
 
-		<div class="slider-item-bg" style="background-image:url( <?php echo wp_get_attachment_image_src( $repeater_item->image_url, 'medium' )[0]; //modif: full par medium ?>);"></div>
+		<div class="slider-item-bg" style="background-image:url( <?php echo wp_get_attachment_image_src( $repeater_item->image_url, 'medium' )[0]; //modif: full par medium ?>);"  aria-label="image de <?php echo $repeater_item->title; ?>"></div>
 
 		<div class="cv-container image-overlay">
 			<div class="cv-outer">

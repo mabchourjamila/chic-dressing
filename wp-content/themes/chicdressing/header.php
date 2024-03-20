@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-
-	<!-- modif:  Ajout de la balise META name=keywords -->
+	<!-- modif:  Ajout des deux balise META name=keywords et name=description -->
+	<meta name="description" content="Chic Dressing - Votre destination pour acheter et vendre des pièces de créateur à prix cassés. Explorez notre collection de marques de luxe aujourd'hui.">
 	<meta name="keywords" content="pièces de créateur, achat-vente, prix cassés, marques de luxe"/>
 
 <?php wp_head(); ?>
