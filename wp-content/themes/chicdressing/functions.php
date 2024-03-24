@@ -11,7 +11,6 @@ function deregister_parent_google_fonts() {
     wp_deregister_style( 'ashe-playfair-font');
     wp_deregister_style( 'ashe-opensans-font');
     wp_deregister_style( 'ashe-kalam-font');
-    //wp_deregister_style( 'ashe-rokkitt-font');
 }
 
 add_action('wp_enqueue_scripts', 'deregister_parent_google_fonts', 100);
